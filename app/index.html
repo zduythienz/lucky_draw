@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Lucky draw</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<!--===============================================================================================-->
+</head>
+<body>
+	<div class="bg-contact2" style="background-image: url('images/background-lucky-draw.png');">
+		<div class="container-contact2">
+            <div class="col-md-8">
+                <div class="col-md-7" style="padding-left: 0">
+                    <div class="main-panel-title">
+                        NÂNG TẦM TRẢI NGHIỆM <br>
+                        KẾT NỐI DÀI LÂU
+                    </div>
+                    <div class="main-panel-title-date">01/03/2018 - 31/03/2018</div>
+                </div>
+                <div class="col-md-12" style="padding-left:0; margin-top:15px;">
+                    <div class="wrap-contact2">
+                        <div class="contact2-form">
+                            <!-- Số điện thoại -->
+                            <div class="wrap-input2 ">
+                                <input class="input2" id="main_sdt" type="text" name="name" disabled>
+                                <span class="focus-input2" data-placeholder="Số điện thoại khách hàng"></span>
+                            </div>
+                            <!-- Tên khách hàng -->
+                            <div class="wrap-input2 ">
+                                <input class="input2" id="main_name" type="text" name="email" disabled style="font-size:36px">
+                                <span class="focus-input2" data-placeholder="Tên khách hàng"></span>
+                            </div>
+                            <!-- Khu vực -->
+                            <div style="text-align: center">
+                                <select class="wrap-input2  select-input" id="main_addres">
+                                    <option class="select-input-option" value="" disabled selected hidden>Vui lòng chọn</option>
+                                    <option class="select-input-option" value="HCM">Hồ Chí Minh</option>
+                                    <option class="select-input-option" value="HN">Hà Nội</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="container-contact2-form-btn">
+                                    <div class="wrap-contact2-form-btn">
+                                        <div class="contact2-form-bgbtn"></div>
+                                        <button id="btn_startRandom" class="contact2-form-btn col-md-6" onclick="startRandom()">
+                                            Bắt đầu
+                                        </button>
+                                        <button id="btn_endRandom" class="contact2-form-btn col-md-6" onclick="endRandom()" hidden>
+                                            Dừng
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="container-contact2-form-btn">
+                                    <div class="wrap-contact2-form-btn">
+                                        <div class="contact2-form-bgbtn"></div>
+                                        <button id="btn_chooseWinner" class="contact2-form-btn col-md-6" onclick="chooseWinner()">
+                                            Chọn số
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-12">
+                <div id="test">
+                    <!-- <div class="col-md-10 col-md-offset-2" style="padding-left:0; padding-right:0">
+                        <div class="name-contact">1</div>
+                        <div class="wrap-contact3">
+                            <div class="contact2-form">
+                                <div class="winner-information-form">aaaaaaaaaaa</div>
+                                <hr class="red-line">
+                                <div class="winner-information-form">bbbbbbbbbbbbb</div>
+                                                        
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+                <!-- <div>
+                    <div class="col-md-10 col-md-offset-2" style="padding-left:0; padding-right:0">
+                        <div class="name-contact name-contact--sub">Dự trù</div>
+                        <div class="wrap-contact3">
+                            <div class="contact2-form">
+                                <div class="winner-information-form">aaaaaaaaaaa</div>
+                                <hr class="red-line">
+                                <div class="winner-information-form">bbbbbbbbbbbbb</div>
+                                                        
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
